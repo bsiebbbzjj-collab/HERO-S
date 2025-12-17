@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="تطبيق إدارة المهام - نظم يومك وزد إنتاجيتك">
+  <title>إدارة المهام | Task Manager</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Landing Header -->
+  <header class="landing-header">
+    <a href="index.html" class="app-logo">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 11l3 3L22 4"/>
+        <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+      </svg>
+      <span data-i18n="nav.tasks">المهام</span>
+    </a>
+    <nav class="landing-nav">
+      <a href="#features" data-i18n="landing.features">المميزات</a>
+      <a href="#how-it-works" data-i18n="landing.howItWorks">كيف يعمل</a>
+      <a href="about.html" data-i18n="about.nav">عن المبرمج</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-selector">
+        <button class="lang-btn active" data-lang="ar">ع</button>
+        <button class="lang-btn" data-lang="en">En</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1 class="hero-title" data-i18n="landing.title">أنجز مهامك بكفاءة</h1>
+      <p class="hero-description" data-i18n="landing.description">
+        تطبيق إدارة المهام الذي يساعدك على تنظيم يومك وزيادة إنتاجيتك بأسلوب بسيط وفعّال
+      </p>
+      <div class="hero-cta">
+        <a href="dashboard.html" class="btn btn-primary btn-lg" data-i18n="landing.cta.start">ابدأ الآن</a>
+        <a href="#features" class="btn btn-secondary btn-lg" data-i18n="landing.cta.learn">تعرف أكثر</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-i18n="landing.features">المميزات</h2>
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 11l3 3L22 4"/>
+                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3 data-i18n="feature.tasks.title">إدارة المهام</h3>
+              <p data-i18n="feature.tasks.desc">أنشئ وتابع مهامك بسهولة مع تصنيفات وأولويات مرنة</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3 data-i18n="feature.calendar.title">عرض التقويم</h3>
+              <p data-i18n="feature.calendar.desc">شاهد مهامك على التقويم الشهري لتخطيط أفضل</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3 data-i18n="feature.focus.title">وضع التركيز</h3>
+              <p data-i18n="feature.focus.desc">استخدم تقنية بومودورو للعمل بتركيز عالٍ</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3 data-i18n="feature.sync.title">حفظ تلقائي</h3>
+              <p data-i18n="feature.sync.desc">جميع بياناتك محفوظة محلياً بشكل آمن</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3 data-i18n="feature.rtl.title">دعم العربية</h3>
+              <p data-i18n="feature.rtl.desc">واجهة كاملة بالعربية مع دعم الاتجاه من اليمين لليسار</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3 data-i18n="feature.responsive.title">تصميم متجاوب</h3>
+              <p data-i18n="feature.responsive.desc">يعمل بشكل مثالي على جميع الأجهزة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="landing.howItWorks">كيف يعمل</h2>
+        <div class="steps-list">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3 data-i18n="step.1.title">أنشئ حسابك</h3>
+              <p data-i18n="step.1.desc">ابدأ مباشرة بدون تسجيل - بياناتك محفوظة في متصفحك</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3 data-i18n="step.2.title">أضف مهامك</h3>
+              <p data-i18n="step.2.desc">أضف مهامك مع تحديد الأولوية وتاريخ الاستحقاق</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3 data-i18n="step.3.title">تابع تقدمك</h3>
+              <p data-i18n="step.3.desc">راقب إنجازاتك من لوحة التحكم والتقويم</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-i18n="landing.contact">تواصل معنا</h2>
+        <div class="contact-info">
+          <p class="text-muted">WhatsApp / Phone</p>
+          <a href="https://wa.me/201127503669" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            +201127503669
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="landing-footer">
+    <p class="footer-text">جميع الحقوق محفوظة لدى Abo Saber © 2025</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
